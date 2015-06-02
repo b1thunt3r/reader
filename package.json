@@ -12,7 +12,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "b1thunt3r <ishan@jain.se>",
+  "author": {
+    "name": "b1hunt3r", "email": "ishan@jain.se", "url": "http://ishan.jain.se/"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
