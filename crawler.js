@@ -1,11 +1,8 @@
-var iron_mq = require('iron_mq'),
-  Crawler = require("node-webcrawler"),
-  options = require('./iron_options'),
+var Crawler = require("node-webcrawler"),
   validUrl = require('valid-url'),
   url = require('url');
 
-var q = new iron_mq.Client(options),
-  urlToUse = url.parse('http://wp.jain.se/ishan/');
+var urlToUse = url.parse('http://wp.jain.se/ishan/');
 
 //noinspection JSUnusedGlobalSymbols
 var c = new Crawler({
@@ -22,10 +19,6 @@ var c = new Crawler({
       if (validUrl.is_web_uri(toQueueUrl)) {
         console.log(toQueueUrl);
         c.queue(toQueueUrl);
-        q.post(toQueueUrl, function (error) {
-          if (error)
-            console.log(error);
-        });
       }
     });
   }

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "main.js",
   "dependencies": {
-    "iron_mq": "^0.2.4",
     "node-readability": "^1.0.1",
     "node-webcrawler": "^0.4.8",
     "valid-url": "^1.0.9"
@@ -13,7 +12,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
-    "name": "b1hunt3r", "email": "ishan@jain.se", "url": "http://ishan.jain.se/"
+    "name": "b1hunt3r",
+    "email": "ishan@jain.se",
+    "url": "http://ishan.jain.se/"
   },
   "license": "MIT",
   "repository": {
