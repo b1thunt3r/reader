@@ -14,7 +14,7 @@ var c = new Crawler({
     $('a').each(function (index, a) {
       // TODO: Distinct the urls, with least amount of mem
       // TODO: Maybe replace queue with db, for dictintion
-      // TODO: come up some clever way to minimize the urls (constrains: domain/hostname?)
+      // TODO: come up some clever way to minimize the urls (constrains: domain/hostname?, filter (remove like tags))
       var toQueueUrl = $(a).attr('href');
       if (validUrl.is_web_uri(toQueueUrl)) {
         console.log(toQueueUrl);
