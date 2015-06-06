@@ -1,3 +1,0 @@
-# Reader Test
-
-Just a simple test for a type of reader...
